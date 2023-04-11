@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>1998FX</title>
+    </head>
+    <body>
+        <h1 id="fujii">plz wait......</h1>
+        <script>
+            // 文字列としてURLを取得する。
+    let url_string = window.location.href;
+    // 文字列としてのURLをURLオブジェクトに変換する。
+    let url = new URL(url_string);
+    // URLオブジェクトのsearchParamsのget関数でIDがdの値を取得する。
+    let data=url.searchParams.get("d");
+    // "d"というIDが定義されていない場合はnullが入る
+            let element = document.getElementById("fujii");
+            element.textContent=decodeURI(data);
+        </script>
+    </body>
+</html>
