@@ -15,3 +15,4 @@ alert("コピーした。でも端末によってはできないかもね。。�
 let nanka = "1998ky262.github.io/decode?d=";
 let value = nanka+decodeURI(msg);
 copyToClipboard(value);
+alert(value);
